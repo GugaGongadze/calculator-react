@@ -5,6 +5,8 @@ class App extends Component {
 	render() {
 		return (
 			<div className="iphone">
+				<div className="header" />
+				<div className="display" />
 				<div className="controls">
 					<div className="special-operators">
 						<button className="special-button">AC</button>
@@ -36,6 +38,7 @@ class App extends Component {
 						<button className="num-button">.</button>
 					</div>
 				</div>
+				<div className="nudge" />
 			</div>
 		);
 	}
