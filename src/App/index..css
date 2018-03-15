@@ -1,0 +1,85 @@
+html {
+	box-sizing: border-box;
+	background: black;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	text-align: center;
+}
+
+.grey-butt {
+	font-family: 'Cagliostro', monospace;
+	font-size: 20px;
+	font-weight: bold;
+	color: #adaeae;
+	background: #393b39;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #393b39;
+}
+
+.iphone {
+	display: grid;
+	justify-content: center;
+	grid-gap: 10px;
+	grid-template-areas:
+		'special special special operator'
+		'positive positive positive operator'
+		'positive positive positive operator'
+		'positive positive positive operator'
+		'zero zero point operator';
+}
+
+.positive-numbers {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	grid-area: positive;
+}
+
+.special-operators {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-area: special;
+}
+
+.operators {
+	display: grid;
+	grid-template-rows: 5fr;
+	grid-gap: 10px;
+	grid-area: operator;
+}
+
+.zero {
+	display: grid;
+	grid-auto-columns: 1fr;
+	grid-gap: 10px;
+	grid-area: zero;
+	justify-content: center;
+}
+
+.point {
+	display: grid;
+	grid-area: point;
+}
+
+.slanted-button {
+	font-family: 'Cagliostro', monospace;
+	font-size: 20px;
+	font-weight: bold;
+	color: #adaeae;
+	background: #393b39;
+	border-radius: 25% / 50%;
+	/* width: 100px; */
+	height: 50px;
+	border: 1px solid #393b39;
+}
