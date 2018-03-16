@@ -1,0 +1,10 @@
+.time p {
+	color: #adaeae;
+	font-family: 'Roboto', monospace;
+	margin: 0;
+}
+
+.time {
+	flex-basis: 25%;
+	padding-right: 2px;
+}

@@ -1,0 +1,16 @@
+.connection {
+	padding-right: 3px;
+}
+
+.alarm {
+	padding-right: 3px;
+}
+.status-icon {
+	width: 15px;
+}
+
+.status {
+	display: flex;
+	justify-content: center;
+	flex-basis: 25%;
+}
