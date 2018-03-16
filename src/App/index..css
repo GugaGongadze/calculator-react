@@ -23,36 +23,36 @@ body {
 }
 
 .num-button {
-	font-family: 'Cagliostro', monospace;
+	font-family: 'Roboto', monospace;
 	font-size: 20px;
 	font-weight: bold;
 	color: #adaeae;
 	background: #393b39;
 	border-radius: 50%;
-	width: 75px;
-	height: 75px;
+	width: 70px;
+	height: 70px;
 	border: 1px solid #393b39;
 }
 
 .special-button {
-	font-family: 'Cagliostro', monospace;
+	font-family: 'Roboto', monospace;
 	font-size: 20px;
 	color: #111112;
 	background: #a6a4a7;
 	border-radius: 50%;
-	width: 75px;
-	height: 75px;
+	width: 70px;
+	height: 70px;
 	border: 1px solid #a6a4a7;
 }
 
 .operator-button {
-	font-family: 'Cagliostro', monospace;
+	font-family: 'Roboto', monospace;
 	font-size: 20px;
 	color: #d5d6d7;
 	background: #d58532;
 	border-radius: 50%;
-	width: 75px;
-	height: 75px;
+	width: 70px;
+	height: 70px;
 	border: 1px solid #d58532;
 }
 
@@ -114,13 +114,13 @@ body {
 }
 
 .slanted-button {
-	font-family: 'Cagliostro', monospace;
+	font-family: 'Roboto', monospace;
 	font-size: 20px;
 	font-weight: bold;
 	color: #adaeae;
 	background: #393b39;
 	border-radius: 25% / 50%;
-	height: 75px;
+	height: 70px;
 	border: 1px solid #393b39;
 }
 
@@ -134,7 +134,7 @@ body {
 
 .display {
 	display: grid;
-	width: 100%;
+	width: 88%;
 	justify-content: end;
 	align-items: end;
 	height: 100%;
@@ -145,10 +145,12 @@ body {
 	font-size: 100px;
 	margin: 0;
 	font-weight: 400;
+	font-family: 'Roboto', monospace;
 }
 
 .time p {
 	color: #adaeae;
+	font-family: 'Roboto', monospace;
 }
 
 .status-icon {
@@ -211,4 +213,12 @@ body {
 
 .time p {
 	margin: 0;
+}
+
+.connection {
+	padding-right: 3px;
+}
+
+.alarm {
+	padding-right: 3px;
 }
