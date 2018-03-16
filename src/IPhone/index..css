@@ -1,0 +1,9 @@
+.iphone {
+	background: #111112;
+	border-radius: 50px;
+	height: 735px;
+	width: 350px;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}

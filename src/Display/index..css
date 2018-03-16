@@ -1,0 +1,15 @@
+.display {
+	display: grid;
+	width: 88%;
+	justify-content: end;
+	align-items: end;
+	height: 100%;
+}
+
+.display h1 {
+	color: #adaeae;
+	font-size: 100px;
+	margin: 0;
+	font-weight: 400;
+	font-family: 'Roboto', monospace;
+}
