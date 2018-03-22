@@ -1,0 +1,16 @@
+.special-button {
+	font-family: 'Roboto', monospace;
+	font-size: 20px;
+	color: #111112;
+	background: #a6a4a7;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	border: 1px solid #a6a4a7;
+}
+.special-operators {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-area: special;
+}

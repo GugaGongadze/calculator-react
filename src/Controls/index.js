@@ -1,22 +1,15 @@
 import React, { Component } from 'react';
 import './index..css';
 
+import SpecialOperators from '../SpecialOperators';
+import Operators from '../Operators';
+
 class Controls extends Component {
 	render() {
 		return (
 			<div className="controls">
-				<div className="special-operators">
-					<button className="special-button">AC</button>
-					<button className="special-button">+/-</button>
-					<button className="special-button">%</button>
-				</div>
-				<div className="operators">
-					<button className="operator-button">÷</button>
-					<button className="operator-button">x</button>
-					<button className="operator-button">-</button>
-					<button className="operator-button">+</button>
-					<button className="operator-button">=</button>
-				</div>
+				<SpecialOperators />
+				<Operators />
 				<div className="positive-numbers">
 					<button className="num-button">7</button>
 					<button className="num-button">8</button>

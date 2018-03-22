@@ -1,0 +1,17 @@
+.operator-button {
+	font-family: 'Roboto', monospace;
+	font-size: 20px;
+	color: #d5d6d7;
+	background: #d58532;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	border: 1px solid #d58532;
+}
+
+.operators {
+	display: grid;
+	grid-template-rows: 5fr;
+	grid-gap: 10px;
+	grid-area: operator;
+}
