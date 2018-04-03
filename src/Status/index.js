@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './index..css';
+import './index.css';
 
 import connectionIcon from '../icons/connection.png';
 import alarmIcon from '../icons/alarm.png';

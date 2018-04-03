@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './index..css';
+import './index.css';
 
 import SpecialOperators from '../SpecialOperators';
 import Operators from '../Operators';

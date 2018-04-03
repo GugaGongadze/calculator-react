@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './index..css';
+import './index.css';
 
 import Clock from '../Clock';
 import Notch from '../Notch';
