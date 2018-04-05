@@ -32,13 +32,19 @@ class IPhone extends Component {
   };
 
   updateEquation = newEquation => {
-    newEquation = this.state.display + newEquation;
+    if (newEquation === '.' && this.state.display.includes('.')) return;
+
+    if (this.state.display === '0') {
+      if (newEquation === '.') {
+        newEquation = '0' + newEquation
+      }
+    } else {
+      newEquation = this.state.equation + newEquation
+    }
 
     this.setState({
       equation: newEquation
     });
-
-    console.log(this.state.equation);
   };
 
   clearState = () => {
@@ -48,8 +54,24 @@ class IPhone extends Component {
     this.setState({
       equation,
       display
-    })
-  }
+    });
+  };
+
+  invert = () => {
+    console.log(this.state);
+    let invertedDisplay;
+
+    if (this.state.display[0] === '-') {
+      invertedDisplay = this.state.display.slice(1);
+    } else {
+      invertedDisplay = '-' + this.state.display;
+    }
+
+    this.setState({
+      display: invertedDisplay,
+      equation: invertedDisplay
+    });
+  };
 
   render() {
     return (

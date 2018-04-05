@@ -47,7 +47,7 @@ class Controls extends Component {
   };
 
   invert = () => {
-    console.log('invert');
+    this.props.invert();
   };
 
   calculatePercent = () => {
