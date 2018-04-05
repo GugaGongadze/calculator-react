@@ -42,21 +42,21 @@ class Controls extends Component {
     }
   };
 
+  clearEverything = () => {
+    this.props.clearState();
+  };
+
+  invert = () => {
+    console.log('invert');
+  };
+
+  calculatePercent = () => {
+    console.log('calculate percent');
+  };
+
   evaluateEquation = () => {
     console.log('evaluate equation');
   };
-
-  clearEverything = () => {
-	  console.log('clear');
-  }
-
-  invert = () => {
-	console.log('invert');
-  }
-
-  calculatePercent = () => {
-	  console.log('calculate percent');
-  }
 
   render() {
     return (

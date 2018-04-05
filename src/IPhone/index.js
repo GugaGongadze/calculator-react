@@ -41,6 +41,16 @@ class IPhone extends Component {
     console.log(this.state.equation);
   };
 
+  clearState = () => {
+    const equation = '0';
+    const display = '0';
+
+    this.setState({
+      equation,
+      display
+    })
+  }
+
   render() {
     return (
       <div className="iphone">
@@ -49,6 +59,9 @@ class IPhone extends Component {
         <Controls
           updateDisplay={this.updateDisplay}
           updateEquation={this.updateEquation}
+          clearState={this.clearState}
+          invert={this.invert}
+          calculatePercentage={this.calculatePercentage}
         />
         <Nudge />
       </div>
