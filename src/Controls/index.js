@@ -24,7 +24,6 @@ class Controls extends Component {
   }
 
   onFractionClick(e) {
-    // console.log(e.target.dataset.content);
     const fraction = e.target.dataset.content;
     this.props.updateDisplay(fraction);
     this.props.updateEquation(fraction);
