@@ -51,11 +51,11 @@ class Controls extends Component {
   };
 
   calculatePercent = () => {
-    console.log('calculate percent');
+    this.props.calculatePercentage();
   };
 
   evaluateEquation = () => {
-    console.log('evaluate equation');
+    this.props.evaluate();
   };
 
   render() {

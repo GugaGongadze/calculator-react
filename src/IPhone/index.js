@@ -58,7 +58,6 @@ class IPhone extends Component {
   };
 
   invert = () => {
-    console.log(this.state);
     let invertedDisplay;
 
     if (this.state.display[0] === '-') {
@@ -73,6 +72,21 @@ class IPhone extends Component {
     });
   };
 
+  calculatePercentage = () => {
+    // TODO
+  }
+
+  evaluate = () => {
+    console.log(eval(this.state.equation));
+    const updatedDisplay = eval(this.state.equation);
+    const updatedEquation = eval(this.state.equation);
+
+    this.setState({
+      display: updatedDisplay,
+      equation: updatedEquation
+    })
+  }
+
   render() {
     return (
       <div className="iphone">
@@ -84,6 +98,7 @@ class IPhone extends Component {
           clearState={this.clearState}
           invert={this.invert}
           calculatePercentage={this.calculatePercentage}
+          evaluate={this.evaluate}
         />
         <Nudge />
       </div>
