@@ -32,6 +32,8 @@ class IPhone extends Component {
   };
 
   updateEquation = newEquation => {
+    newEquation = this.state.display + newEquation;
+
     this.setState({
       equation: newEquation
     });

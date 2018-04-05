@@ -30,11 +30,30 @@ class Controls extends Component {
     this.props.updateEquation(fraction);
   }
 
+  updateOperation = operator => {
+	  this.props.updateEquation(operator);
+
+	  if (operator === '*') {
+		  this.props.updateDisplay('x');
+	  } else if (operator === '/') {
+		  this.props.updateDisplay('÷')
+	  } else {
+		this.props.updateDisplay(operator)
+	  }
+  };
+
+  evaluateEquation = () => {
+    console.log('evaluate equation');
+  };
+
   render() {
     return (
       <div className="controls">
         <SpecialOperators />
-        <Operators />
+        <Operators
+          updateOperation={this.updateOperation}
+          evaluateEquation={this.evaluateEquation}
+        />
         <div className="positive-numbers" onClick={this.onButtonsClicked}>
           <button data-content="7" className="num-button">
             7
