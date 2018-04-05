@@ -17,7 +17,7 @@ class Operators extends Component {
 	}
 
 	onEqualityClick(e) {
-		// console.log();
+		this.props.evaluateEquation();
 	}
 
 	render() {
