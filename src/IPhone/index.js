@@ -113,12 +113,17 @@ class IPhone extends Component {
 
     this.setState({
       display: invertedDisplay,
-      equation: invertedDisplay
+      equation: this.state.equation + invertedDisplay
     });
   };
 
   calculatePercentage = () => {
-    // TODO
+    const fraction = round((+this.state.display / 100), 2).toString();
+
+    this.setState({
+      display: fraction,
+      equation: fraction
+    })
   };
 
   evaluate = () => {
