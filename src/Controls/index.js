@@ -31,25 +31,41 @@ class Controls extends Component {
   }
 
   updateOperation = operator => {
-	  this.props.updateEquation(operator);
+    this.props.updateEquation(operator);
 
-	  if (operator === '*') {
-		  this.props.updateDisplay('x');
-	  } else if (operator === '/') {
-		  this.props.updateDisplay('÷')
-	  } else {
-		this.props.updateDisplay(operator)
-	  }
+    if (operator === '*') {
+      this.props.updateDisplay('x');
+    } else if (operator === '/') {
+      this.props.updateDisplay('÷');
+    } else {
+      this.props.updateDisplay(operator);
+    }
   };
 
   evaluateEquation = () => {
     console.log('evaluate equation');
   };
 
+  clearEverything = () => {
+	  console.log('clear');
+  }
+
+  invert = () => {
+	console.log('invert');
+  }
+
+  calculatePercent = () => {
+	  console.log('calculate percent');
+  }
+
   render() {
     return (
       <div className="controls">
-        <SpecialOperators />
+        <SpecialOperators
+          clearEverything={this.clearEverything}
+          invert={this.invert}
+          calculatePercent={this.calculatePercent}
+        />
         <Operators
           updateOperation={this.updateOperation}
           evaluateEquation={this.evaluateEquation}
